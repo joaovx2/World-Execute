@@ -35,8 +35,7 @@ while Complite == False:
     playsound(song_path)
     song_duration = playsound._playsoundWin.getDuration(song_path) / 1000
     start_time = time.time()
-    sleep(1)
-    while time.time() - start_time < song_duration:
+    while time.time() -  start_time < song_duration:
         power_line = False
         World.slow_print(style.RED+"Switch on the power line"+style.RESET,0.03 )
         power_line = True
