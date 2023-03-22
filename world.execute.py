@@ -31,10 +31,11 @@ while Complite == False:
             print(f"Music starting in {cnt}")
             cnt -= 1
             time.sleep(1)
-    print(f"START !!!")
+    print(f"Starting!!!")
     playsound(song_path)
     song_duration = playsound._playsoundWin.getDuration(song_path) / 1000
     start_time = time.time()
+    sleep(1)
     while time.time() - start_time < song_duration:
         power_line = False
         World.slow_print(style.RED+"Switch on the power line"+style.RESET,0.03 )
@@ -517,5 +518,5 @@ while Complite == False:
     World.slow_print(style.RED+" -O-"+style.RESET,0)
     time.sleep(0.1)
     World.slow_print(style.RED+" OVE"+style.RESET,0)
-    me = "Code by Alif Budiman, Music by Mili"
+    me = "Code by Joao, Music by Mili"
     World.Execute(me)
